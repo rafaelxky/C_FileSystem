@@ -11,12 +11,6 @@ struct Inode newInode(){
     return inode;
 }
 
-// to be replaced
-void* alloc(size_t size){
-    void* ptr = malloc(size);
-    return ptr;
-}
-
 struct Block* newBlock(){
     struct Block *block = alloc(sizeof(struct Block));
     block->text[0] = '\0';
